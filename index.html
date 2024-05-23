@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
+</head>
+  <body>
+<header>
+  <h2 class="text-center mt-5">Bookmarker <hr> </h2>
+  <h3 class="text-center">
+    <i class="fa fa-bookmark"></i> Bookmark your favorite sites <i class="fa fa-bookmark"></i>
+  </h3>
+</header>
+<div class="section-1 d-flex">
+  <div class="container justify-content-center align-items-center mt-5">
+    <h4>
+    <i class="fa fa-book"></i>Site name
+    </h4>
+    <input id="Sname" type="text" placeholder="First input" class="w-100">
+    <br>
+    <h4 class="mt-3">
+      <i class="fa fa-link"></i> URL 
+    </h4>
+    <input id="url" type="text" placeholder="Second input" class="w-100">
+  </div>
+</div>
+<button id="submitBtn" onclick="add()" class="btn bg-danger ps-4 pe-4 text-white text-center position-absolute start-50 mt-3 fs-5">Submit</button>
+<hr>
+<div id="section-2">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 bg-white">
+      <h2>index</h2>
+    </div>
+    <div class="col-md-3 bg-white">
+      <h2>website name</h2>
+    </div>
+    <div class="col-md-3 bg-white">
+      <h2>Vndex</h2>
+    </div>
+    <div class="col-md-3 bg-white">
+      <h2>Delete</h2>
+    </div>
+  </div>
+</div>
+</div>
+<section id="table">
+
+</section>
+    <script src="script/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>

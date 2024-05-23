@@ -1,0 +1,70 @@
+/* */
+body{
+    background-color: #F7ECDE;
+
+}
+header h2{
+    font-family: "Pacifico", cursive; 
+    font-weight: bolder;
+    font-size: 50px;
+    position: relative;
+    z-index: 999;
+}
+header h2::after{
+    content: '';
+    width: 20%;
+    background-color:#FEC260 ;
+    color: #FEC260;
+    height: 20px;
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 5%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+header h2:hover::after{
+height: 50px;
+top: -1px;
+}
+hr {
+    text-decoration: dotted;
+    width: 80%;
+    margin-left: 10% ;
+       border: none;
+    margin-top: 80px;
+    border-top: 3px dotted black;
+    font-weight: 900;
+}
+/* End of heAaderr */
+/* start next */
+header h3{
+    font-family: "Righteous", sans-serif;
+    background: linear-gradient(to right, #40A55B, #B3AC49);
+    background-clip: text;
+    color: transparent;
+}
+
+
+#section-2 .col-md-3{
+    background-color: #F8F9FA !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-2 h2{
+    font-size: 20px;
+    }
+
+/* start of table */
+#table .col-md-3{
+    background-color: #F8F9FA !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#table h2{
+font-size: 20px;
+}
