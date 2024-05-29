@@ -1,8 +1,8 @@
 let Sname = document.getElementById("Sname");
 let url = document.getElementById("url");
-
+let Errors = document.getElementById("error");
 let container = []; 
-
+let Uerrors = document.getElementById("Uerror");
 
 if (localStorage.getItem('allsites')) {
   container = JSON.parse(localStorage.getItem('allsites'))
@@ -15,6 +15,11 @@ if (localStorage.getItem('allsites')) {
 
 
 function add() {
+if(validateSname()){
+
+if (ValidateUrl()){
+
+
     let site = {
       name: Sname.value,
       link: url.value
@@ -25,7 +30,11 @@ function add() {
     clear()
     localStorage.setItem('allsites', JSON.stringify(container))
 
+  
   }
+}
+}
+
 function display() {
     let cartona =""
     for (let i = 0; i < container.length; i++) {
@@ -78,3 +87,36 @@ function deleteItem(index) {
   localStorage.setItem('allsites', JSON.stringify(container))
 
 }
+function validateSname() {
+  var regex =/^[A-Z][a-z]{2,7}$/ ;
+  if (regex.test(Sname.value)){
+    console.log("match");
+   Sname.classList.add("is-valid")
+   Sname.classList.remove("is-invalid")
+   Errors.classList.replace("d-block", "d-none")
+    return true
+  }
+  
+  else {
+    console.log("Not Match");
+
+    Sname.classList.add("is-invalid")
+    Sname.classList.remove("is-valid")
+    Errors.classList.replace("d-none", "d-block")
+    return false
+  }
+  
+}
+function ValidateUrl() {
+  var regexs = /^.+\.com$/;
+  if (regexs.test(url.value)) {
+    console.log("match");
+    Uerrors.classList.replace("d-block", "d-none");
+    return true;
+  } else {
+    console.log("unmatch");
+    Uerrors.classList.replace("d-none", "d-block");
+    return false;
+  }
+}
+
