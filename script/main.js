@@ -41,18 +41,18 @@ function display() {
       cartona+=`
       <div class="container mt-2">
     <div class="row">
-      <div class="col-md-3 bg-white">
+      <div class="col-md-3 col-3 bg-white">
         <h2>
         ${container[i].name}
         </h2>
       </div>
-      <div class="col-md-3 bg-white">
+      <div class="col-md-3 col-3 bg-white">
         <h2>
         ${container[i].link}
 
         </h2>
       </div>
-      <div class="col-md-3 bg-white"> 
+      <div class="col-md-3 col-3 bg-white"> 
 
         <button class="btn bg-primary-subtle"> <i class="fa fa-eye"></i>
         
@@ -64,7 +64,7 @@ function display() {
         
         </button>
       </div>
-      <div class="col-md-3 bg-white">
+      <div class="col-md-3 col-3 bg-white">
         <button onclick="deleteItem(${i})" class="btn bg-danger"> <i class="fa fa-trash"></i> Delete</button>
       </div>
     </div>
